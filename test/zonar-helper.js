@@ -40,24 +40,24 @@ describe("parsePayload", function() {
 });
 
 
-describe("bb test", function() {
-
-    var producer = zonar.create({net: "test", name: "producer", payload : { doc : { port : 5556, type :"req"}}});
-    var consumer = zonar.create({net: "test", name: "consumer" });
-
-    before(function(){
-        consumer.start();
-        producer.start();
-    });
-
-    after(function(){
-        consumer.stop(function(){
-            producer.stop();
-        });
-    });
-
-    it("", function() {
-
-    });
-
-});
+//describe("bb test", function() {
+//
+//    var producer = zonar.create({net: "test", name: "producer", payload : { doc : { port : 5556, type :"req"}}});
+//    var consumer = zonar.create({net: "test", name: "consumer" });
+//
+//    before(function(){
+//        consumer.start();
+//        producer.start();
+//    });
+//
+//    after(function(){
+//        consumer.stop(function(){
+//            producer.stop();
+//        });
+//    });
+//
+//    it("asd", function(done) {
+//        done();
+//    });
+//
+//});
